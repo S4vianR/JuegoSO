@@ -1,0 +1,23 @@
+:root {
+    --green-bg: #daffec;
+    --purple-bg: #f6eaff;
+}
+
+body {
+    background-color: var(--green-bg)
+}
+
+.game-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 3rem;
+    margin-left: 10%;   
+}
+
+iframe {
+    margin: 10% auto;
+    display: block;
+}
