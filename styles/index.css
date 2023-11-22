@@ -7,6 +7,18 @@ body {
     background-color: var(--green-bg)
 }
 
+header {
+    background-color: var(--purple-bg);
+    padding: 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
 .game-wrapper {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -15,6 +27,14 @@ body {
     width: 80%;
     gap: 3rem;
     margin-left: 10%;   
+}
+
+@media (max-width: 768px) {
+    .game-wrapper {
+        grid-template-columns: 1fr;
+        margin-left: 5%;
+    }
+    
 }
 
 iframe {
